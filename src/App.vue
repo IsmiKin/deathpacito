@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <nav class="bg-white shadow-sm border-b">
+    <nav class="bg-secondary shadow-sm border-b">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
             <router-link to="/" class="flex items-center">
-              <img alt="Vue logo" class="h-8 w-8" src="@/assets/logo.svg" />
+              <img alt="Vue logo" class="h-8 w-8" src="@/assets/images/logo_circular.svg" />
               <span class="ml-2 text-xl font-semibold text-gray-900">DeathPacito</span>
             </router-link>
           </div>
