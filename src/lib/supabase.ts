@@ -13,15 +13,20 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     autoRefreshToken: true,
     persistSession: true,
     detectSessionInUrl: true,
-    flowType: 'pkce', // Use PKCE flow for better security
+    flowType: 'pkce', // Use PKCE flow for better securitya
   },
 })
+
+export interface UserMetadata {
+  first_name: string
+}
 
 // Types
 export interface User {
   id: string
   email: string
   created_at: string
+  user_metadata: unknown
 }
 
 export interface SignUpStep1Data {

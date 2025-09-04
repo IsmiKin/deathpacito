@@ -131,7 +131,7 @@ import { useAuthStore } from '@/stores/auth'
 import { Button } from '@/components/ui/button'
 
 const authStore = useAuthStore()
-
+// TODO: Move this into a getter
 const userName = computed(() => {
   if (authStore.user?.user_metadata?.first_name) {
     return authStore.user.user_metadata.first_name

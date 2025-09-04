@@ -22,7 +22,7 @@
             </div>
           </div>
 
-          <div v-if="userProfile">
+          <!-- <div v-if="userProfile">
             <h3 class="text-lg font-semibold mb-2">Profile Information</h3>
             <div class="bg-gray-50 p-4 rounded-lg space-y-2">
               <p><strong>Name:</strong> {{ userProfile.firstName }} {{ userProfile.lastName }}</p>
@@ -31,7 +31,7 @@
               <p><strong>Position:</strong> {{ userProfile.position }}</p>
               <p><strong>Experience:</strong> {{ userProfile.experience }}</p>
             </div>
-          </div>
+          </div> -->
 
           <Alert v-if="error" variant="destructive">
             <AlertDescription>{{ error }}</AlertDescription>
