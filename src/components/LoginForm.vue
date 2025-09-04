@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-md mx-auto p-6">
+  <div class="flex flex-col items-center max-w-md mx-auto p-6">
     <Card class="w-full">
       <CardHeader class="text-center">
         <CardTitle>Welcome Back</CardTitle>
@@ -53,7 +53,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nav class="bg-secondary shadow-sm border-b">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-card shadow-sm border-b">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
             <router-link to="/" class="flex items-center">
@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <main class="min-h-screen bg-gray-50">
+    <main class="min-h-screen bg-background">
       <RouterView />
     </main>
   </div>
