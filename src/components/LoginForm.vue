@@ -53,7 +53,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -71,6 +71,7 @@ const password = ref('')
 const handleLogin = async () => {
   authStore.clearError()
 
+  // Validate form fields
   if (!email.value || !password.value) {
     authStore.error = 'Please fill in all fields'
     return
@@ -78,7 +79,14 @@ const handleLogin = async () => {
 
   try {
     await authStore.signIn(email.value, password.value)
-    router.push('/dashboard')
+
+    // Check for redirect query parameter
+    const redirectTo = router.currentRoute.value.query.redirect as string
+    if (redirectTo) {
+      router.push(redirectTo)
+    } else {
+      router.push('/dashboard')
+    }
   } catch (error) {
     console.error('Login error:', error)
   }
