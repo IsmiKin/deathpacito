@@ -1,6 +1,7 @@
 <template>
   <div class="max-w-4xl mx-auto p-6">
-    <h1>Pika</h1>
+    <h1>Work In Progess</h1>
+    <img alt="Work In Progress image" width="300" src="@/assets/images/wip_image.png" />
     <Card class="w-full">
       <CardHeader>
         <div class="flex justify-between items-center">

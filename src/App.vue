@@ -5,7 +5,7 @@
         <div class="flex justify-between h-16">
           <div class="flex items-center">
             <router-link to="/" class="flex items-center">
-              <img alt="Vue logo" class="h-8 w-8" src="@/assets/images/logo_circular.svg" />
+              <img alt="Deathpacito logo" class="h-8 w-8" src="@/assets/images/logo_circular.svg" />
               <span class="ml-2 text-xl font-semibold text-gray-900">DeathPacito</span>
             </router-link>
           </div>

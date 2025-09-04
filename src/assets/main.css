@@ -24,6 +24,12 @@
     padding: 0 2rem;
   }
 } */
+
+h1 {
+  color: var(--foreground);
+  font-size: 2.5rem;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

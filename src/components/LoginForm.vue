@@ -1,5 +1,7 @@
 <template>
   <div class="flex flex-col items-center max-w-md mx-auto p-6">
+    <h1>Work In Progess</h1>
+    <img alt="Work In Progress image" width="300" src="@/assets/images/wip_image.png" />
     <Card class="w-full">
       <CardHeader class="text-center">
         <CardTitle>Welcome Back</CardTitle>
